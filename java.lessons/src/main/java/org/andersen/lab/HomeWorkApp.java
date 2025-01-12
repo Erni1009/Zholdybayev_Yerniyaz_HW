@@ -28,12 +28,12 @@ public class HomeWorkApp {
 
 
     public static void printColor() {
-        int value = 55;
+        int value = -5;
 
         if (value <= 0) {
             System.out.println("Red");
         }
-        else if (value > 0 && value <= 100) {
+        else if (value <= 100) {
             System.out.println("Yellow");
         }
         else {
