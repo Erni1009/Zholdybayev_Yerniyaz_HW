@@ -2,39 +2,36 @@ package Lesson8;
 
 public class Employee {
 
-    public static String name;
-    public static String position;
-    public static String email;
-    public Integer phone;
-    public Integer salary;
-    public Integer age;
-    public String[] infoArray;
-
-    public static void main(String[] args) {
-        //Employee employee = new Employee("Ivan", "QA", "sdad", 123, 23, 23 );
-        printInfo(new Employee("Ivan", "QA", "sdad", 123, 23, 23, new String[]{"info", "info"}));
-    }
-
-
-    public Employee(String name, String position, String email, Integer phone, Integer salary, Integer age, String[] infoArray) {
+    public Employee(String name, String position, String email, int phone, int salary, int age) {
         this.name = name;
         this.position = position;
         this.email = email;
         this.phone = phone;
         this.salary = salary;
         this.age = age;
-        this.infoArray = infoArray;
-
 
     }
 
-    public String getName() {
-        return name;
+    private String name;
+    private String position;
+    private String email;
+    private int phone;
+    private int salary;
+    private int age;
+    private String[] infoArray;
+
+    public int getAge() {
+        return age;
     }
 
-    public static void printInfo(Employee employee) {
-        System.out.println("name: " + name + ", " + "pos: " + position + " " + "email: " + " " + email + " " + employee.infoArray);
-
+    public void getInfo(){
+        System.out.println("Name is " + "\"" + name + "\"");
+        System.out.println("Postion is " + "\"" + position + "\"");
+        System.out.println("Email is " + "\"" + email + "\"");
+        System.out.println("Phone is " + "\"" + phone + "\"");
+        System.out.println("Salary is " + "\"" + salary + "\"");
+        System.out.println("Age is " + "\"" + age + "\"");
+        System.out.println("==================================");
     }
 
 
